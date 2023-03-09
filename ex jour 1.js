@@ -29,3 +29,9 @@ localStorage.setItem("serpillère", objLinea);
 
 objLinea = localStorage.getItem("serpillère");
 objJson = JSON.parse(objLinea);
+
+console.log(objJson.marque);
+
+let elm = document.getElementById('serpillère');
+elt.innerHTML = objJson.marque
+
