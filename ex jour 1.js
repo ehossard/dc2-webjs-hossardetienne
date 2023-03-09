@@ -13,3 +13,19 @@ elt.appendChild(newElt);
 const myElement = document.createElement("article");
 
 elt.replaceChild(myElement, newElt);
+
+
+
+
+let objJson = {
+    marque : "dyson",
+    matière : "bois",
+    tauxAbsorbtion : 80,
+    taille : "L"
+}
+let objLinea = JSON.stringify(objJson);
+localStorage.setItem("serpillère", objLinea);
+
+
+objLinea = localStorage.getItem("serpillère");
+objJson = JSON.parse(objLinea);
